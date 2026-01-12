@@ -46,7 +46,7 @@ A multi user, login protected Notes API with per user data isolation.
 - DynamoDB partitioning by user identity
 - Zero-trust API design (no client-supplied user IDs)
 
-## 🎯 Design Philosophy
+## Design Philosophy
 
 - **Serverless first** where appropriate
 - **Least privilege IAM** everywhere
@@ -54,7 +54,7 @@ A multi user, login protected Notes API with per user data isolation.
 - **Clear separation of concerns**
 - **Production style patterns**, even in small projects
 
-## 📌 Notes
+## Notes
 
 - Screenshots and reflections are included inside each project folder.
 
