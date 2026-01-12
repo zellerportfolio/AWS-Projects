@@ -11,7 +11,7 @@ These projects were built to reflect associate cloud engineering constraints, in
 ## 📂 Projects Overview
 
 ### 1️⃣ Resume Website on AWS (CloudFront + S3)
-**Folder:** `01-resume-website-cloudfront`
+**Folder:** [Project README](projects/01-resume-website-cloudfront/README.md)
 
 A globally distributed, HTTPS secured static resume website using AWS native services.
 
@@ -23,7 +23,7 @@ A globally distributed, HTTPS secured static resume website using AWS native ser
 - Security headers and HTTPS enforcement
 
 ### 2️⃣ Serverless URL Shortener
-**Folder:** `02-serverless-url-shortener`
+**Folder:** [Project README](projects/02-serverless-url-shortener/README.md)
 
 A Bitly style URL shortener built using a fully serverless backend.
 
@@ -35,16 +35,16 @@ A Bitly style URL shortener built using a fully serverless backend.
 - Structured logging & error handling
 
 ### 3️⃣ Secure Notes API (Authentication & Authorization)
-**Folder:** `03-secure-notes-api`
+**Folder:** [Project README](projects/03-secure-notes-api/README.md)
 
-A multi user, login protected Notes API with per user data isolation.
+A multiple user, login protected Notes API with per user data isolation.
 
 **Key skills demonstrated**
 - Amazon Cognito (User Pools, JWT)
 - API Gateway authorizers
 - Secure Lambda backend design
 - DynamoDB partitioning by user identity
-- Zero-trust API design (no client-supplied user IDs)
+- Zero trust API design (no client-supplied user IDs)
 
 ## Design Philosophy
 
