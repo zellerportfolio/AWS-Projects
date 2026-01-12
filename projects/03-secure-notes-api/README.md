@@ -1,4 +1,4 @@
-# Project 03 – Secure Notes
+# Secure Notes API (Cognito + Serverless)
 
 **Status:** Planned  
 
