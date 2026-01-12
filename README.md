@@ -2,8 +2,7 @@
 
 Welcome to my AWS Project Portfolio! This repository showcases hands-on AWS projects demonstrating my understanding of cloud infrastructure, security boundaries, and operational best practices.
 
-These projects were built to reflect **entry level cloud engineering constraints**:
-least privilege access, cost awareness, and safe production design thinking.
+These projects were built to reflect associate cloud engineering constraints, including least privilege access, cost awareness, and safe production design thinking.
 
 ## Certifications
 - AWS Certified Solutions Architect Associate
