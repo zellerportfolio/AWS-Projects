@@ -27,10 +27,10 @@ least privilege access, cost awareness, and safe production design thinking.
 [View Project →](projects/03-logging-monitoring)
 
 ## How These Projects Were Built
-- Free Tier
-- No hardcoded credentials
-- Designed with entry level IAM constraints in mind
-- Cleaned up after deployment
+- Free Tier.
+- No hardcoded credentials.
+- Designed with entry level IAM constraints in mind.
+- Cleaned up after deployment.
 
 ## Contact
 LinkedIn: <https://www.linkedin.com/in/austinzeller/>
