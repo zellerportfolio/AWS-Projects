@@ -1,4 +1,4 @@
-# Project 02 – URL Shortener
+# Serverless URL Shortener (AWS)
 
 **Status:** Planned  
 
