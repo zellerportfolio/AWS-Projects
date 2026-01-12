@@ -11,7 +11,7 @@ These projects were built to reflect associate cloud engineering constraints, in
 ## 📂 Projects Overview
 
 ### 1️⃣ Resume Website on AWS (CloudFront + S3)
-**Link:** [Project](projects/01-resume-website-cloudfront)
+[View Project](projects/01-resume-website-cloudfront)
 
 A globally distributed, HTTPS secured static resume website using AWS native services.
 
@@ -23,7 +23,7 @@ A globally distributed, HTTPS secured static resume website using AWS native ser
 - Security headers and HTTPS enforcement
 
 ### 2️⃣ Serverless URL Shortener
-**Link:** [Project](projects/02-serverless-url-shortener)
+[View Project](projects/02-serverless-url-shortener)
 
 A Bitly style URL shortener built using a fully serverless backend.
 
@@ -35,7 +35,7 @@ A Bitly style URL shortener built using a fully serverless backend.
 - Structured logging & error handling
 
 ### 3️⃣ Secure Notes API (Authentication & Authorization)
-**Link:** [Project](projects/03-secure-notes-api)
+[View Project](projects/03-secure-notes-api)
 
 A multiple user, login protected Notes API with per user data isolation.
 
