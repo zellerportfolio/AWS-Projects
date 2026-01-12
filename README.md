@@ -8,28 +8,55 @@ These projects were built to reflect associate cloud engineering constraints, in
 - AWS Certified Solutions Architect Associate
 - AWS Certified Cloud Practitioner
 
-## Projects
+## 📂 Projects Overview
 
-### 1. Secure Static Website with Amazon S3 & CloudFront
-**Focus:** Cloud fundamentals, content delivery, security boundaries  
-**Services:** S3, CloudFront, IAM, CloudWatch  
-[View Project →](projects/01-static-site-cloudfront)
+### 1️⃣ Resume Website on AWS (CloudFront + S3)
+**Folder:** `01-resume-website-cloudfront`
 
-### 2. Serverless Backend API
-**Focus:** Event-driven design, managed compute, decoupling  
-**Services:** Lambda, API Gateway, DynamoDB  
-[View Project →](projects/02-serverless-api)
+A globally distributed, HTTPS secured static resume website using AWS native services.
 
-### 3. Logging & Monitoring in AWS
-**Focus:** Observability, troubleshooting, operations thinking  
-**Services:** CloudWatch, VPC Flow Logs  
-[View Project →](projects/03-logging-monitoring)
+**Key skills demonstrated**
+- CDN architecture with CloudFront
+- Private S3 origins (OAC)
+- TLS certificates with ACM
+- DNS with Route 53
+- Security headers and HTTPS enforcement
 
-## How These Projects Were Built
-- Free Tier.
-- No hardcoded credentials.
-- Designed with entry level IAM constraints in mind.
-- Cleaned up after deployment.
+### 2️⃣ Serverless URL Shortener
+**Folder:** `02-serverless-url-shortener`
+
+A Bitly style URL shortener built using a fully serverless backend.
+
+**Key skills demonstrated**
+- API Gateway (REST, Lambda proxy)
+- AWS Lambda (Python)
+- DynamoDB single-table design
+- Least privilege IAM
+- Structured logging & error handling
+
+### 3️⃣ Secure Notes API (Authentication & Authorization)
+**Folder:** `03-secure-notes-api`
+
+A multi user, login protected Notes API with per user data isolation.
+
+**Key skills demonstrated**
+- Amazon Cognito (User Pools, JWT)
+- API Gateway authorizers
+- Secure Lambda backend design
+- DynamoDB partitioning by user identity
+- Zero-trust API design (no client-supplied user IDs)
+
+## 🎯 Design Philosophy
+
+- **Serverless first** where appropriate
+- **Least privilege IAM** everywhere
+- **Security by default**, not as an afterthought
+- **Clear separation of concerns**
+- **Production style patterns**, even in small projects
+
+## 📌 Notes
+
+- Screenshots and reflections are included inside each project folder.
 
 ## Contact
 LinkedIn: <https://www.linkedin.com/in/austinzeller/>
