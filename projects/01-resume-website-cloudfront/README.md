@@ -1,61 +1,101 @@
-# Resume Website on AWS (CloudFront + S3)
+# Resume Website on AWS (CloudFront + Private S3)
 
-A secure, globally cached resume website hosted entirely on AWS using native services.
-
----
-
-## Goal
-
-Host a fast, secure, custom domain resume site using AWS best practices for static content delivery.
+A globally cached, secure static resume website hosted on AWS using Amazon CloudFront with a private Amazon S3 origin.
 
 ---
 
-## Architecture **[pending completion]**
+## Project Goal
 
-**Browser**
-→ **CloudFront (CDN + HTTPS)**
-→ **Private S3 Bucket (Origin Access Control)**
+Deploy a production style static website using AWS native services that demonstrates:
 
-**Route 53** handles DNS  
-**ACM (us-east-1)** provides TLS certificates
+- CDN based content delivery
+- Secure private object storage
+- HTTPS via managed CloudFront certificates
+- Real world cloud architecture patterns for static sites
+
+---
+
+## Current Architecture (Implemented)
+
+**User / Browser**  
+→ **Amazon CloudFront Distribution (CDN + HTTPS)**  
+→ **Private Amazon S3 Bucket (Origin Access Control)**  
+
+- The site is accessed using the **CloudFront default domain**
+- HTTPS is provided by **CloudFront’s managed certificate**
+- The S3 bucket is **not publicly accessible**
+- All content is served **only through CloudFront**
+
+> Direct access to S3 object URLs returns `AccessDenied`, enforcing least privilege access.
 
 ---
 
 ## AWS Services Used
 
-- Amazon S3 (private origin)
-- Amazon CloudFront
-- AWS Certificate Manager (ACM)
-- Amazon Route 53
+- **Amazon S3**
+  - Hosts static HTML and CSS site files created locally via CloudShell
+  - Block Public Access enabled
+  - Default encryption enabled
+- **Amazon CloudFront**
+  - Global CDN
+  - HTTPS termination
+  - Caching and origin protection via Origin Access Control (OAC)
+
+> No custom domain since this is a portfolio piece, Route 53 records, or ACM certificates were configured in the current build.
 
 ---
 
-## Security Highlights
+## Security Characteristics
 
-- S3 **Block Public Access enabled**
-- CloudFront **Origin Access Control (OAC)**
-- HTTPS enforced (HTTP → HTTPS redirect)
-- Optional security headers (HSTS, CSP, X-Frame-Options)
+- S3 **Block Public Access** enabled
+- CloudFront **Origin Access Control (OAC)** restricts S3 access
+- HTTPS enforced via CloudFront default domain
+- Direct S3 access blocked (`AccessDenied`)
 
----
-
-## What This Demonstrates
-
-- CDN-based web delivery
-- Secure static hosting without public S3 access
-- DNS + TLS integration
-- Cost-efficient global architecture
+This mirrors real world patterns used to prevent direct object exposure.
 
 ---
 
-## Validation
+## Validation & Testing
 
-- Site loads over HTTPS
-- Direct S3 access returns `AccessDenied`
-- CloudFront invalidations propagate updates
+- Site successfully loads over HTTPS through CloudFront
+- CloudFront serves cached or fresh content correctly
+- Direct S3 URLs are inaccessible
+- Content updates propagate after CloudFront invalidation using CloudShell
 
 ---
 
-## Key Insight
+## What This Project Demonstrates
 
-> Deployed a globally cached, HTTPS resume website on AWS using S3 (private origin), CloudFront, Route 53, and ACM with secure access controls and CDN best practices.
+- Static website hosting on AWS without public S3 access
+- CDN-based architecture using CloudFront
+- Secure origin design using Origin Access Control
+- Practical understanding of AWS content delivery fundamentals
+- Cost-aware architecture suitable for Free Tier learning
+
+---
+
+## Future Enhancements (Not Implemented)
+
+The following were intentionally scoped as future improvements:
+
+- Custom domain using **Amazon Route 53**
+- TLS certificate management using **AWS Certificate Manager (ACM)**
+- HTTP security headers via **CloudFront Functions**
+- CI/CD deployment using GitHub Actions or AWS CodePipeline
+- Access logging and monitoring
+
+These enhancements are reflected in the optional architecture diagram but were **not part of the deployed build**.
+
+---
+
+## Architecture Diagrams
+
+- `PENDING` — Current deployed architecture
+- `PENDING` — Future optional enhancement with custom domain using Route 53 and TLS using ACM
+
+---
+
+## Key Takeaway
+
+> Built a secure, globally distributed static website on AWS using CloudFront with a private S3 origin, demonstrating CDN caching, origin protection, and HTTPS delivery without exposing public object storage.
