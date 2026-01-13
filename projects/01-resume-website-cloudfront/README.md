@@ -113,7 +113,7 @@ These enhancements are reflected in the optional architecture diagram but were *
 
 ### Direct S3 Access Blocked
 
-[S3 access denied](projects/01-resume-website-cloudfront/screenshots/S3-direct-access-denied-to-resume-site.png)
+[S3 access denied](screenshots/S3-direct-access-denied-to-resume-site.png)
 
 ---
 
