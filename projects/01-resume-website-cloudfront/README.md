@@ -1,6 +1,6 @@
 # Resume Website on AWS (CloudFront + Private S3)
 
-A globally cached, secure static resume website hosted on AWS using Amazon CloudFront with a private Amazon S3 origin.
+Deployed a globally cached, secure static resume website hosted on AWS using Amazon CloudFront with a private Amazon S3 origin.
 
 ---
 
