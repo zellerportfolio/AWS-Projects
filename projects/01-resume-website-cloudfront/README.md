@@ -15,7 +15,7 @@ Deploy a production style static website using AWS native services that demonstr
 
 ---
 
-## Current Architecture (Implemented)
+## Current Architecture (Deployed)
 
 **User / Browser**  
 → **Amazon CloudFront Distribution (CDN + HTTPS)**  
@@ -89,10 +89,31 @@ These enhancements are reflected in the optional architecture diagram but were *
 
 ---
 
-## Architecture Diagrams
+## Architecture
 
-- `PENDING` — Current deployed architecture
-- `PENDING` — Future optional enhancement with custom domain using Route 53 and TLS using ACM
+### Current Implementation
+
+[Core architecture](diagrams/core-diagram-architecture.png)
+
+### Optional Future Enhancement
+
+[Optional architecture](diagrams/optional-diagram-architecture.png)
+
+---
+
+## Deployment Screenshots
+
+### CloudFront Distribution
+
+[CloudFront distribution](screenshots/CloudFront-Distribution-for-Resume-Site.png)
+
+### Site Live via CloudFront
+
+[Live site](screenshots/CloudFront-Distribution-Domain-Live-Resume-Site.png)
+
+### Direct S3 Access Blocked
+
+[S3 access denied](projects/01-resume-website-cloudfront/screenshots/S3-direct-access-denied-to-resume-site.png)
 
 ---
 
