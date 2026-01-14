@@ -16,7 +16,7 @@ Using EC2 would introduce unnecessary operational overhead for a simple request/
 
 ---
 
-## What broke, and how did you debug it?
+## What broke and how did I debug it?
 
 The primary issue was repeated `403 MissingAuthenticationTokenException` errors on the GET redirect endpoint.
 
@@ -33,7 +33,7 @@ Additionally, using `curl -i` (GET with headers) instead of `curl -I` (HEAD requ
 
 ---
 
-## What tradeoffs did you consciously make?
+## What tradeoffs did I consciously make?
 
 - Used API Gateway default domain instead of a custom domain to avoid extra cost and complexity
 - Chose API keys over Cognito for simplicity and scope control
