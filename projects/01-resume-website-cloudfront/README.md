@@ -68,7 +68,7 @@ This mirrors real world patterns used to prevent direct object exposure.
 ## What This Project Demonstrates
 
 - Static website hosting on AWS without public S3 access
-- CDN-based architecture using CloudFront
+- CDN based architecture using CloudFront
 - Secure origin design using Origin Access Control
 - Practical understanding of AWS content delivery fundamentals
 - Cost-aware architecture suitable for Free Tier learning
@@ -93,11 +93,11 @@ These enhancements are reflected in the optional architecture diagram but were *
 
 ### Current Implementation
 
-[Core architecture](diagrams/core-diagram-architecture.png)
+![Core Architecture](./diagrams/core-diagram-architecture.png)
 
 ### Optional Future Enhancement
 
-[Optional architecture](diagrams/optional-diagram-architecture.png)
+![Optional architecture](./diagrams/optional-diagram-architecture.png)
 
 ---
 
@@ -105,15 +105,15 @@ These enhancements are reflected in the optional architecture diagram but were *
 
 ### CloudFront Distribution
 
-[CloudFront distribution](screenshots/CloudFront-Distribution-for-Resume-Site.png)
+![CloudFront distribution](./screenshots/CloudFront-Distribution-for-Resume-Site.png)
 
 ### Site Live via CloudFront
 
-[Live site](screenshots/CloudFront-Distribution-Domain-Live-Resume-Site.png)
+![Live site](./screenshots/CloudFront-Distribution-Domain-Live-Resume-Site.png)
 
 ### Direct S3 Access Blocked
 
-[S3 access denied](screenshots/S3-direct-access-denied-to-resume-site.png)
+![S3 access denied](./screenshots/S3-direct-access-denied-to-resume-site.png)
 
 ---
 
