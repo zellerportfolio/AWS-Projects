@@ -144,4 +144,4 @@ Planned enhancements include:
 
 ## Key Takeaway
 
-This project demonstrates how to build and operate a secure, serverless API on AWS using managed services only. It emphasizes correctness, observability, and cost awareness over unnecessary complexity.
+> This project demonstrates how to build and operate a secure, serverless API on AWS using managed services only. It emphasizes correctness, observability, and cost awareness over unnecessary complexity.
