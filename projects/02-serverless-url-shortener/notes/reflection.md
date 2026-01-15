@@ -1,4 +1,4 @@
-# Project Reflection – Serverless URL Shortener
+# Project Reflection - Serverless URL Shortener
 
 ## What problem does this solve in the real world?
 
