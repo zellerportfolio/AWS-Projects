@@ -71,7 +71,7 @@ This mirrors real world patterns used to prevent direct object exposure.
 - CDN based architecture using CloudFront
 - Secure origin design using Origin Access Control
 - Practical understanding of AWS content delivery fundamentals
-- Cost-aware architecture suitable for Free Tier learning
+- Cost aware architecture suitable for Free Tier learning
 
 ---
 
