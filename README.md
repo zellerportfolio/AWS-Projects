@@ -1,62 +1,94 @@
 # AWS Projects Portfolio
 
-Welcome to my AWS Project Portfolio! This repository showcases hands-on AWS projects demonstrating my understanding of cloud infrastructure, security boundaries, and operational best practices.
+Welcome to my AWS Projects Portfolio. This repository contains hands-on, production style cloud projects built using AWS managed services, with a strong focus on security boundaries, serverless architecture, and operational correctness.
 
-These projects were built to reflect associate cloud engineering constraints, including least privilege access, cost awareness, and safe production design thinking.
+All projects are designed within **associate level cloud engineering constraints**, emphasizing:
+- Least privilege access
+- Cost awareness and Free Tier alignment
+- Secure-by-default architecture
+- Clear separation of responsibilities between services
+
+---
 
 ## Certifications
-- AWS Certified Solutions Architect Associate
-- AWS Certified Cloud Practitioner
+
+- **AWS Certified Solutions Architect Associate**
+- **AWS Certified Cloud Practitioner**
+
+---
 
 ## 📂 Projects Overview
 
-### 1️⃣ Resume Website on AWS (CloudFront + S3)
+### 1️⃣ Resume Website on AWS (CloudFront + Private S3)
 [View Project](projects/01-resume-website-cloudfront)
 
-A globally distributed, HTTPS secured static resume website using AWS native services.
+A globally distributed, HTTPS secured static resume website built using AWS native services and modern CDN best practices.
 
 **Key skills demonstrated**
-- CDN architecture with CloudFront
-- Private S3 origins (OAC)
-- TLS certificates with ACM
-- DNS with Route 53
-- Security headers and HTTPS enforcement
+- Content delivery using Amazon CloudFront
+- Private Amazon S3 origins secured with Origin Access Control (OAC)
+- HTTPS enforcement via CloudFront managed certificates
+- Cost-aware static site hosting
+- Secure origin design preventing direct object access
 
-### 2️⃣ Serverless URL Shortener
+---
+
+### 2️⃣ Serverless URL Shortener API
 [View Project](projects/02-serverless-url-shortener)
 
-A Bitly style URL shortener built using a fully serverless backend.
+A Bitly style URL shortener implemented using a fully serverless backend on AWS.
 
 **Key skills demonstrated**
-- API Gateway (REST, Lambda proxy)
-- AWS Lambda (Python)
-- DynamoDB single-table design
-- Least privilege IAM
-- Structured logging & error handling
+- Amazon API Gateway (REST API, Lambda proxy integration)
+- AWS Lambda (Python 3.11)
+- DynamoDB single table access patterns
+- Conditional writes for data integrity
+- Least privilege IAM execution roles
+- Input validation and defensive error handling
+- Real world troubleshooting of API Gateway and Lambda behavior
+
+---
 
 ### 3️⃣ Secure Notes API (Authentication & Authorization)
 [View Project](projects/03-secure-notes-api)
 
-A multiple user, login protected Notes API with per user data isolation.
+A secure, multi-user Notes API where authenticated users can create, read, update, and delete their own data with strict per-user isolation.
 
 **Key skills demonstrated**
-- Amazon Cognito (User Pools, JWT)
-- API Gateway authorizers
-- Secure Lambda backend design
-- DynamoDB partitioning by user identity
-- Zero trust API design (no client-supplied user IDs)
+- Amazon Cognito User Pools for authentication
+- JWT (JSON Web Token) based authorization enforced at API Gateway
+- Secure Lambda backend design with identity derived from token claims
+- Multi-tenant data modeling in DynamoDB
+- Zero trust API design (no client supplied user identifiers)
+- Clean, explicit error handling for unauthorized and invalid access
+
+---
 
 ## Design Philosophy
 
-- **Serverless first** where appropriate
-- **Least privilege IAM** everywhere
+Across all projects, I prioritize:
+
+- **Serverless-first architecture** where appropriate
+- **Least privilege IAM** as a baseline requirement
 - **Security by default**, not as an afterthought
-- **Clear separation of concerns**
-- **Production style patterns**, even in small projects
+- **Clear service boundaries and responsibility separation**
+- **Production style patterns**, even in small scale systems
+- **Operational clarity**, favoring correctness over unnecessary complexity
 
-## Notes
+---
 
-- Screenshots and reflections are included inside each project folder.
+## Repository Notes
+
+- Each project folder contains:
+  - Architecture diagrams
+  - Deployment screenshots
+  - Source code (where applicable)
+  - A detailed README explaining design decisions
+  - A written reflection covering tradeoffs and debugging lessons
+
+These projects are intended to reflect how real world AWS systems are designed, secured, and reasoned about, rather than optimized purely for feature count.
+
+---
 
 ## Contact
 LinkedIn: <https://www.linkedin.com/in/austinzeller/>
