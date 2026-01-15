@@ -105,7 +105,7 @@ These enhancements are reflected in the optional architecture diagram but were *
 
 ### CloudFront Distribution
 
-![CloudFront distribution](./screenshots/CloudFront-Distribution-for-Resume-Site.png)
+![CloudFront distribution](./screenshots/cloudfront-distribution-for-resume-site.png)
 
 ### Site Live via CloudFront
 
